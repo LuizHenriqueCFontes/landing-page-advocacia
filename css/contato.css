@@ -4,40 +4,61 @@
     --background-body: #F4F7F9;
 }
 /*Mobile First*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     background-color: #F4F7F9;
-    display: grid;
-    justify-content: center;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    line-height: 1.6;
 }
 
 main{
-    display: grid;
-    grid-template-columns: auto 90vw auto;
-    margin-top: 40px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 5%;
 }
 
 article{
-    padding: 25px;
-    grid-column: 2 /2;
     background-color: white;
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.293);
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    width: 100%;
+    max-width: 900px;
 }
 
 .atendimento{
-    margin: -25px;
-    margin-bottom: 15px;
-    padding: 30px;
-    background-color: var(--cor-primaria);
-    color: white;
+    flex: 1 1 300px;
+    background: #0a1128;
+    color: #fff;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .atendimento h1{
     color: var(--cor-secundaria);
+    margin-bottom: 20px;
 }
 
-.container-form{
-    font-weight: bold;
+.atendimento p{
+    margin-top: 10px;
+}
+
+.container-form{ 
+    flex: 1.5 1 400px;
+    padding: 40px;
 }
 
 .container-form label{
@@ -55,6 +76,7 @@ article{
 
 label{
     margin-bottom: 10px;
+    font-weight: bold;
 }
 
 input{
@@ -63,9 +85,47 @@ input{
     padding: 10px;
     border: 1px solid #EEEEEE;
     margin-top: 5px;
+    transition: 0.3s;
 }
 
-footer{
-    margin-top: 20px;
+textarea{
+    margin-top: 10px;
+    resize: none;
+    width: 100%;
+    border: 1px solid #EEEEEE;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+textarea:focus-within{
+    outline: none;
+    box-shadow: 0px 0px 4px var(--cor-secundaria);
+}
+
+.btn{
+    background-color: var(--cor-secundaria);
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    height: 50px;
+    text-transform: uppercase;
+}
+
+.btn:hover{
+    color: white;
+    background-color: var(--cor-primaria);
+    cursor: pointer;
+}
+
+input:focus-within{
+    outline: none;
+    box-shadow: 0px 0px 4px var(--cor-secundaria);
+}
+
+/*Config telas maiores*/
+@media screen and (min-width: 768px) {
+    .atendimento{
+        flex-direction: column; 
+    }
 }
 
