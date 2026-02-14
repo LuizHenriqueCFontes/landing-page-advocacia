@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/telas-maiores.css">
+    <link rel="stylesheet" href="../css/contato.css">
+    <title>Advocacia Prestígio</title>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Advocacia Prestígio</div>
+
+        <input type="checkbox" name="menu-toggle" id="menu-toggle">
+
+        <label for="menu-toggle" class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="../index.html" rel="internal">Início</a></li>
+                <li><a href="atuacao.html" rel="internal">Áreas de Atuação</a></li>
+                <li><a href="#">Sobre o Escritório</a></li>
+                <li><a href="pags/contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <section class="atendimento">
+                <h1>Canais de Atendimento</h1>
+                <p>📍 Rua Jurídica, 123 - Centro, SP</p>
+                <p>📞 (11) 99999-9999</p>
+                <p>✉️ contato@advocacia.com.br</p>
+                <p>🕒 Seg - Sex: 09h às 18h</p>
+            </section>
+
+            <section class="container-form">
+                <h2>Envie sua Mensagem</h2>
+
+                <form method="post">
+                    <div>
+                        <label for="id-nome">Nome Completo</label>
+                        <input type="text" name="nome" id="id-nome" placeholder="Seu nome" required minlength="5" maxlength="255">
+                    </div>
+
+                    <div>
+                        <label for="id-email">E-mail</label>
+                        <input type="email" name="email" id="id-email" required placeholder="email@example.com.br" minlength="5" maxlength="255">
+                    </div>
+
+                    <div>
+                        <label for="id-assunto">Assunto</label>
+                        <input type="text" name="assunto" id="id-assunto" required placeholder="Ex: Inventário, Contato" minlength="5" maxlength="255">
+                    </div>
+
+                    <div>
+                        <label for="id-mensagem">Mensagem</label>
+                        <textarea name="mensagem" id="id-mensagem" placeholder="Como podemos ajudar?" required rows="5" maxlength="255"></textarea>
+                    </div>
+
+                    <input type="submit" value="Enviar Solicitação">
+                </form>
+            </section>
+        </article>
+    </main>
+
+     <footer id="contato">
+        <div class="footer-info">
+            <p><strong>Dr. Nome do Advogado - OAB/XX 000.000</strong></p>
+            <p>Rua Jurídica, 123 - Edifício Business, Sala 405</p>
+            <p>Centro - São Paulo/SP | CEP: 01000-000</p>
+            <p>E-mail: contato@advocaciaexemplo.com.br</p>
+            <p>Telefone: (11) 99999-9999</p>
+            <p style="margin-top: 30px; font-size: 0.75rem; color: #666; letter-spacing: 1px;">&copy; 2026 Advocacia Prestígio. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
